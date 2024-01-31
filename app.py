@@ -23,14 +23,14 @@ prediction_text_style = """
 
 load_css()
 col1, col2, col3 = st.columns(3)
-st.header('Abusive Comment Detector using :blue[_mBERT_] :computer:')
+st.header('Abusive Comment Detector using :blue[_BERT_] :computer:')
 
-st.info('This model is a Finetuned version of mBERT on the Abusive Comment Dataset. The dataset contains comments in native Telugu script, Code-Mixed Telugu and Telugu-English Comments. More description can be found in my Github Repo. Enter a comment in the text box below and click on Analyze, then the model will give Prediction as Abusive or Not Abusive.')
+st.info('This model is a Finetuned version of BERT on the Abusive Comment Dataset. The dataset contains comments in native Telugu script, Code-Mixed Telugu and Telugu-English Comments. More description can be found in my Github Repo. Enter a comment in the Text Box below and click on Analyze, then the model will give Prediction as Abusive or Not Abusive.')
 
 @st.cache_data
 def get_model():
-    tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
-    model = BertForSequenceClassification.from_pretrained("revanth-reddy-9/Abusive_Comment_Detector_mBERT")
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    model = BertForSequenceClassification.from_pretrained("revanth-reddy-9/Abusive_Comment_Detector_BERT")
     return tokenizer, model
 
 tokenizer, model = get_model()
