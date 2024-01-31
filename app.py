@@ -1,9 +1,8 @@
 import streamlit as st
 from st_functions import st_button, load_css
 import numpy as np
-from transformers import XLMRobertaTokenizer, XLMRobertaForSequenceClassification
+from transformers import BertTokenizer, BertForSequenceClassification
 import torch
-from safetensors import safe_open # Import the safetensors library
 
 # Define styles for prediction elements
 prediction_container_style = """
@@ -24,14 +23,14 @@ prediction_text_style = """
 
 load_css()
 col1, col2, col3 = st.columns(3)
-st.header('Abusive Comment Detector using :blue[_XLMRoBERTa_] :computer:')
+st.header('Abusive Comment Detector using :blue[_mBERT_] :computer:')
 
-st.info('This model is a Finetuned version of XLMRoBERTa on the Abusive Comment Dataset. The dataset contains comments in native Telugu script, Code-Mixed Telugu and Telugu-English Comments. More description can be found in my Github Repo. Enter a comment in the text box below and click on Analyze, then the model will predict as Abusive or Not Abusive. The Accuracy of this Finetuned Model is 87%.')
+st.info('This model is a Finetuned version of mBERT on the Abusive Comment Dataset. The dataset contains comments in native Telugu script, Code-Mixed Telugu and Telugu-English Comments. More description can be found in my Github Repo. Enter a comment in the text box below and click on Analyze, then the model will give Prediction as Abusive or Not Abusive.')
 
 @st.cache_data
 def get_model():
-    tokenizer = XLMRobertaTokenizer.from_pretrained('xlm-roberta-base')
-    model = XLMRobertaForSequenceClassification.from_pretrained("revanth-reddy-9/Abusive_Comment_Detector_XLMRoBERTa", use_safetensors=True)
+    tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
+    model = BertForSequenceClassification.from_pretrained("revanth-reddy-9/Abusive_Comment_Detector_mBERT")
     return tokenizer, model
 
 tokenizer, model = get_model()
