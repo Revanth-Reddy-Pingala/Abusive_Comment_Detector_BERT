@@ -6,6 +6,8 @@ from st_functions import st_button, load_css
 #from transformers import BertTokenizer, BertForSequenceClassification
 #import torch
 
+icon_size = 24
+
 # Define styles for prediction elements
 prediction_container_style = """
     display: flex;
@@ -59,8 +61,6 @@ d = {
 #   y_pred = np.argmax(output.logits.detach().numpy(), axis=1)
 #   prediction_text = f"Prediction: {d[y_pred[0]]}"
 #   st.markdown(f"<h2 style='{prediction_text_style}'>{prediction_text}</h2>", unsafe_allow_html=True)
-
-icon_size = 24
 
 st_button('linkedin', 'https://www.linkedin.com/in/revanth-reddy-pingala/', '   Connect with me on LinkedIn', icon_size)
 st_button('github', 'https://github.com/Revanth-Reddy-Pingala', '   Check my Github Profile', icon_size)
