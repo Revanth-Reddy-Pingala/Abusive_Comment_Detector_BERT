@@ -7,7 +7,9 @@
 - With the rapid growth of online platforms and social media, there is an increasing need to address critical natural language processing task of Abusive Comment Detection in Low Resource Languages like Telugu.
 
 ## Demo
-- [Streamlit Abusive Comment Detector App](https://abusive-comment-detector.streamlit.app)
+- Live Demo [Streamlit Abusive Comment Detector App](https://abusive-comment-detector.streamlit.app)
+
+- Video Demo of Local Run : [Youtube Video](https://youtu.be/_oRxPD9kHQg?feature=shared)
   
 - Before Prediction
 
@@ -75,19 +77,16 @@ After setting up environment and installing packages using requirements.txt, Run
 ## Models used in my Main Project
 - mBERT
 - XLMRoBERTa
-
 ## Evaluation metrics after Training
 - loss
 - accuracy
 - precision
 - recall
 - f1 score
-
 ## Accuracy for the Models
 - BERT - 69% (sample dataset of 1k comments)
 - mBERT - 86% (Entire dataset of 34.5k Comments)
 - XLMRoBERTa - 89% (Entire dataset of 34.5k Comments)
-
 ## Why sample dataset in this Repo for Deployment
 - Due to limited access of cloud RAM after Deployment.
 
@@ -97,3 +96,4 @@ After setting up environment and installing packages using requirements.txt, Run
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/revanth-reddy-pingala/)
 [![Blogger](https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://rrdatadiaries.blogspot.com/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/revanth_reddy.1459/)
+[![Youtube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@revanthreddy369?feature=shared)
