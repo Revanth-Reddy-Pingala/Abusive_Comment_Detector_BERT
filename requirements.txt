@@ -1,3 +1,5 @@
 streamlit
-torch
-transformers
+
+#Remove these comments if you want to run this app locally in your computer
+#torch
+#transformers
