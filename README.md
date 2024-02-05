@@ -10,6 +10,7 @@
 ## Tech Stack Used 
 - Python, Google Colab for Training models using GPU.
 - HuggingFace Transformers for model trainig and saving.
+- Visual Studio (VS) Code with Conda Environment.
 - Streamlit for Frontend, CSS for styles.
 
 ### Live Demo [Streamlit Abusive Comment Detector App](https://abusive-comment-detector.streamlit.app)
