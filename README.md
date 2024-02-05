@@ -6,16 +6,21 @@
 
 - With the rapid growth of online platforms and social media, there is an increasing need to address critical natural language processing task of Abusive Comment Detection in Low Resource Languages like Telugu.
 
-## Demo
-- Live Demo [Streamlit Abusive Comment Detector App](https://abusive-comment-detector.streamlit.app)
+# Demo
+## Tech Stack Used 
+- Python, Google Colab for Training models using GPU.
+- HuggingFace Transformers for model trainig and saving.
+- Streamlit for Frontend, CSS for styles.
 
-- Video Demo of Local Run : [Youtube Video](https://youtu.be/_oRxPD9kHQg?feature=shared)
+### Live Demo [Streamlit Abusive Comment Detector App](https://abusive-comment-detector.streamlit.app)
+
+### Video Demo of Local Run : [Youtube Video](https://youtu.be/_oRxPD9kHQg?feature=shared)
   
-- Before Prediction
+- #### Before Prediction
 
 <img width="1452" alt="Screenshot 2024-01-31 at 8 32 02 PM" src="https://github.com/Revanth-Reddy-Pingala/Abusive_Comment_Detector_BERT/assets/125516124/ab2742f5-0995-4e76-9866-4fc87ae3f92d">
 
-- After Prediction
+- #### After Prediction
 
 <img width="1452" alt="Screenshot 2024-01-31 at 8 42 34 PM" src="https://github.com/Revanth-Reddy-Pingala/Abusive_Comment_Detector_BERT/assets/125516124/bb094e98-358b-4d86-98c3-1defc90f4716">
 
